@@ -1,4 +1,166 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/signin.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  --primary-color: #079a91;
+  --primary-color-dark: #0e615e;
+  --secondary-color: #fe4711;
+  --secondary-color-dark: #ef2c07;
+  --heading-color: #444444;
+  --dark-text-color: #333333;
+  --light-text-color: #effefa;
+  --light-color: #effefa;
+}
+
+h1,
+h2 {
+  font-family: "Poppins";
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Roboto Condensed";
+}
+
+h6,
+p,
+span {
+  font-family: "Roboto";
+}
+
+.wrapper {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: var(--light-text-color);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.back-to-home i {
+  color: var(--light-color);
+  margin-right: 10px;
+}
+.back-to-home a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-family: "Roboto";
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: var(--light-text-color);
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+}
+
+.wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: -15px 0 15px;
+}
+
+.remember-forget label {
+  font-family: "Roboto";
+}
+
+.remember-forget label input {
+  accent-color: var(--light-text-color);
+  margin-right: 3px;
+}
+
+.remember-forget a {
+  font-family: "Roboto";
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: var(--light-color);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: var(--dark-text-color);
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin: 0 20px;
+  }
 }
