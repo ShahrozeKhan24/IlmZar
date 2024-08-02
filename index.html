@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+     <!-- Animate.css -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+  />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Title Logo -->
+    <link rel="icon" href="./images/mini-logo.png" type="image/x-icon" />
+    <title>IlmZar | Bringing Quality Education to Your Doorstep</title>
+  </head>
+
+  <body>
+    <!-- NavBar Start -->
+    <nav class="navbar navbar-expand-lg absolute-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/Logo.png" alt="Logo" class="brand-logo" />
+          ILMZAR
+        </a>
+        <div
+          class="offcanvas offcanvas-end"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IlmZar</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="signin.html" class="signin-button" target="_blank">Sign In</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar End-->
+
+    <!-- Hero Section with Counter -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-lg-2 wow animate__animated animate__fadeInRightBig" data-wow-delay="0.9s">
+            <img
+              src="images/hero.png"
+              class="hero-img img-fluid"
+              alt="Educational Resources"
+            />
+          </div>
+          <div class="col-12 col-lg-6 order-lg-1 wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.5s">
+            <h1 class="text-white fw-bold display-4">
+              Bringing Quality Education to Your Doorstep
+            </h1>
+            <p>
+              Welcome to <strong>IlmZar</strong>, your premier destination for
+              online education in Pakistan. At IlmZar, we believe in the
+              transformative power of knowledge and its ability to shape the
+              future. Our mission is to provide accessible, high-quality
+              education to learners across the nation, empowering them to
+              achieve their dreams and aspirations.
+            </p>
+            <a href="about.html" class="btn">Learn More</a>
+          </div>
+        </div>
+        <div class="row mt-5 wow animate__animated animate__zoomIn" data-wow-delay="0.3s"">
+          <div class="col-md-4">
+            <div class="counter">
+              <h2 id="courses">0</h2>
+              <p>Courses</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="counter">
+              <h2 id="students">0</h2>
+              <p>Students</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="counter">
+              <h2 id="teachers">0</h2>
+              <p>Teachers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section with Counter -->
+
+    <!-- Team Member Start -->
+    <div class="container mt-5">
+      <h1 class="heading-title wow animate__animated animate__zoomIn" data-wow-delay="0.3s">Meet Our Team</h1>
+      <div class="row">
+        <div class="col-md-4 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+          <div class="card team-card">
+            <img
+              src="./images/teammember.png"
+              class="card-img-top"
+              alt="Team Member 1"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Shahroze Ayyaz Khan</h4>
+              <p class="position">Team Leader</p>
+              <p class="description">
+                Shahroze Ayyaz Khan is our inspiring leader, guiding us with his passion and dedication. He created our homepage and contact page, making sure they are welcoming and easy to navigate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.7s">
+          <div class="card team-card">
+            <img
+              src="./images/teammember.png"
+              class="card-img-top"
+              alt="Team Member 2"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Sarmad Khan</h4>
+              <p class="position">Team Member</p>
+              <p class="description">
+                Sarmad Khan is the creative mind behind our about and course pages. He tells our story beautifully and helps people understand what we offer so that they can choose their desired course.
+              </p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col-md-4 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.9s">
+          <div class="card team-card">
+            <img
+              src="./images/teammember.png"
+              class="card-img-top"
+              alt="Team Member 3"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Fahad Khan</h4>
+              <p class="position">Team Member</p>
+              <p class="description">
+                Fahad Khan is our go-to person for making things interactive and fun. He built our gallery and signin/signout pages, ensuring everyone has a smooth and enjoyable experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member -->
+
+    <!-- Courses -->
+    <section id="course">
+      <div class="container mt-5">
+        <h1 class="heading-title wow animate__animated animate__zoomIn" data-wow-delay="0.3s">Popular Courses</h1>
+        <div class="row">
+          <div class="col-md-4 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+            <div class="card course-card">
+              <img
+                src="./images/courses/Web Development.png"
+                class="card-img-top"
+                alt="Web Development"
+              />
+              <div class="price-circle">Rs 2000</div>
+              <div class="card-body">
+                <h4 class="card-title">Web Development Bootcamp</h4>
+                <p class="description">
+                  Learn the fundamentals of web development including HTML, CSS,
+                  and JavaScript. Build real-world projects and become a web
+                  developer.
+                </p>
+                <a href="#" class="btn">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.7s">
+            <div class="card course-card">
+              <img
+                src="./images/courses/Project Management Professional.png"
+                class="card-img-top"
+                alt="Project Management"
+              />
+              <div class="price-circle">Rs 3000</div>
+              <div class="card-body">
+                <h4 class="card-title">Project Management Professional</h4>
+                <p class="description">
+                  Prepare for the PMP certification. Learn project management
+                  methodologies, risk management, and project planning.
+                </p>
+                <a href="#" class="btn">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4 wow animate__animated animate__zoomIn" data-wow-delay="0.9s">
+            <div class="card course-card">
+              <img
+                src="./images/courses/Graphic Design Essentials.png"
+                class="card-img-top"
+                alt="Graphic Design"
+              />
+              <div class="price-circle">Rs 2500</div>
+              <div class="card-body">
+                <h4 class="card-title">Graphic Design Essentials</h4>
+                <p class="description">
+                  Learn the principles of graphic design, including typography,
+                  color theory, and digital illustration. Create stunning
+                  visuals for various media.
+                </p>
+                <a href="#" class="btn">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        <div class="text-center mt-5 wow animate__animated animate__zoomIn" data-wow-delay="0.9s">
+          <a href="courses.html" class="btn">View All Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container mt-5 text-center">
+        <h1 class="heading-title wow animate__animated animate__zoomIn" data-wow-delay="0.3s">How It Works</h1>
+        <div class="row">
+          <div class="col-md-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+            <div class="step-item">
+              <div class="step-icon"><i class="fas fa-book-open"></i></div>
+              <h3>Step 1</h3>
+              <p>Choose your course.</p>
+            </div>
+          </div>
+          <div class="col-md-4 wow animate__animated animate__zoomIn" data-wow-delay="0.7s">
+            <div class="step-item">
+              <div class="step-icon"><i class="fas fa-user-graduate"></i></div>
+              <h3>Step 2</h3>
+              <p>Enroll and start learning.</p>
+            </div>
+          </div>
+          <div class="col-md-4 wow animate__animated animate__zoomIn" data-wow-delay="0.9s">
+            <div class="step-item">
+              <div class="step-icon"><i class="fas fa-certificate"></i></div>
+              <h3>Step 3</h3>
+              <p>Complete the course and get certified.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section mt-5 wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+      <div class="testimonial-overlay"></div>
+      <div class="container testimonial-content">
+        <h1 class="heading-title-light wow animate__animated animate__zoomIn" data-wow-delay="0.3s">Testimonials</h1>
+        <div class="row">
+          <div class="col-md-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+            <div class="testimonial-item">
+              <img src="./images/male-avator.jpg" alt="Person 1" />
+              <blockquote>
+                "This course transformed my career. The instructors were
+                incredibly knowledgeable and supportive throughout."
+              </blockquote>
+              <cite>John Doe, Web Developer</cite>
+            </div>
+          </div>
+          <div class="col-md-4 wow animate__animated animate__zoomIn" data-wow-delay="0.7s">
+            <div class="testimonial-item">
+              <img src="./images/female-avator.jpg" alt="Person 2" />
+              <blockquote>
+                "An amazing learning experience! The hands-on projects helped me
+                gain practical skills quickly."
+              </blockquote>
+              <cite>Jane Smith, Data Scientist</cite>
+            </div>
+          </div>
+          <div class="col-md-4 wow animate__animated animate__zoomIn" data-wow-delay="0.9s">
+            <div class="testimonial-item">
+              <img src="/images/male-avator.jpg" alt="Person 3" />
+              <blockquote>
+                "Highly recommended for anyone looking to advance their skills.
+                The support and resources were top-notch."
+              </blockquote>
+              <cite>Michael Brown, Cyber Security Expert</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+
+    <!--Footer Start-->
+    <div id="footer" class="container-fluid pt-3 pb-3">
+      <div class="container text-center">
+        <div class="row g-3">
+          <div class="col-lg-2 col-xl-2 col-md-2 col-sm-6 mx-auto mt-3">
+            <img
+              class="footer-logo img-fluid"
+              src="images/Logo.png"
+              alt="No Image Found"
+            />
+            <h4 class="footer-heading mt-2">ILMZAR</h4>
+          </div>
+
+          <div class="col-lg-5 col-xl-5 col-md-5 col-sm-6 mx-auto mt-3">
+            <h4 class="footer-heading">Quick Links</h4>
+            <p class="footer-text"><a href="index.html">Home</a></p>
+            <p class="footer-text"><a href="about.html">About</a></p>
+            <p class="footer-text"><a href="courses.html">Courses</a></p>
+            <p class="footer-text"><a href="gallery.html">Gallery</a></p>
+            <p class="footer-text"><a href="contact.html">Contact</a></p>
+          </div>
+
+          <div class="col-lg-5 col-xl-5 col-md-5 col-sm-6 mx-auto mt-3">
+            <h4 class="footer-heading">Contact</h4>
+            <p>
+              <li class="fas fa-home mb-2 mr-3 footer-icon"></li>
+              <span class="footer-text ms-2"
+                >W2FH+FR6, Block 5-C Nazimabad, Karachi.</span
+              >
+            </p>
+            <p>
+              <li class="fas fa-envelope mb-2 mr-3 footer-icon"></li>
+              <span class="footer-text ms-2">info@ilmzar.com</span>
+            </p>
+            <p>
+              <li class="fas fa-phone mb-2 mr-3 footer-icon"></li>
+              <span class="footer-text ms-2">021-123456789</span>
+            </p>
+            <p>
+              <li class="fas fa-mobile mb-2 mr-3 footer-icon"></li>
+              <span class="footer-text ms-2">+92 301 1234567</span>
+            </p>
+          </div>
+        </div>
+        <hr class="horizon mb-4" />
+
+        <!-- Social Media Links Start -->
+        <div class="row d-flex justify-content-center mb-4">
+          <div class="col-auto">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-media-links">
+              <a
+                href="https://facebook.com"
+                class="social-icon facebook"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                class="social-icon twitter"
+                target="_blank"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                class="social-icon instagram"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                class="social-icon linkedin"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Social Media Links End -->
+
+        <div class="row d-flex justify-content-center">
+          <div>
+            <p class="Copyright">
+              Copyright &copy; 2024 All rights reserved by :
+              <strong class="footer-name">ILMZAR</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer End-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+        <!--JS Libraries-->
+        <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+          new WOW().init();
+      </script>
+    <script>
+      $(document).ready(function () {
+        var coursesCount = 10;
+        var studentsCount = 150;
+        var teachersCount = 8;
+
+        // Function to animate counters
+        function animateCounter(id, count) {
+          $({ Counter: 0 }).animate(
+            { Counter: count },
+            {
+              duration: 8000,
+              easing: "swing",
+              step: function () {
+                $("#" + id).text(Math.ceil(this.Counter) + "+");
+              },
+            }
+          );
+        }
+        animateCounter("courses", coursesCount);
+        animateCounter("students", studentsCount);
+        animateCounter("teachers", teachersCount);
+      });
+    </script>
+  </body>
+</html>
