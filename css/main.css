@@ -404,8 +404,7 @@ a.nav-link.fw-bold.active {
     font-size: 0.8rem;
   }
 
-  .card-body a.btn {
-  .btn {
+  .cardbody a.btn {
     padding: 8px 12px;
   }
 }
