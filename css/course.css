@@ -1,4 +1,545 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  overflow-x: none;
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+:root {
+  --primary-color: #079a91;
+  --primary-color-dark: #0e615e;
+  --secondary-color: #fe4711;
+  --secondary-color-dark: #ef2c07;
+  --heading-color: #444444;
+  --dark-text-color: #333333;
+  --light-text-color: #effefa;
+  --light-color: #effefa;
+}
+
+h1,
+h2 {
+  font-family: "Poppins";
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Roboto Condensed";
+}
+
+h6,
+p,
+span {
+  font-family: "Roboto";
+  color: var(--dark-text-color);
+}
+
+/* Buttons */
+.login-button {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 0.875rem;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: all 0.5s linear;
+}
+
+.login-button:hover {
+  background-color: var(--primary-color-dark);
+  border-color: var(--dark-text-color-color);
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+.btn:hover {
+  background-color: var(--secondary-color-dark);
+  border-color: var(--light-color);
+}
+
+/* Buttons */
+
+/* Heading Title */
+.heading-title {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.heading-title-light {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.heading-title::after,
+.heading-title-light::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 4px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+/* Heading-Title */
+/*-----------------------------------
+      Home Page
+      --------/* Buttons */
+.signin-button {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 0.875rem;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.signin-button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+.btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+/* Buttons */
+
+/* Heading Title */
+.heading-title {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.heading-title-light {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.heading-title::after,
+.heading-title-light::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 4px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+/* Heading-Title */
+
+/*-----------------------------------
+    Navbar
+  ------------------------------------*/
+.navbar {
+  height: 70px;
+  border-bottom: 2px solid var(--secondary-color);
+  background-color: var(--light-color);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  transition: 0.3s ease-in;
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color);
+}
+
+.brand-logo {
+  width: 70px;
+  height: 50px;
+}
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: var(--dark-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a.nav-link:hover,
+a.nav-link.fw-bold.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.offcanvas-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-family: "Roboto";
+}
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    visibility: visible;
+  }
+}
+/*-----------------------------------
+      Navbar
+    ------------------------------------*/
+/*-----------------------------------
+      Breadcrumbs
+    ------------------------------------*/
+.breadcrumbs .page-header {
+  padding: 100px 0 80px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs .page-header:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs .page-header h2 {
+  font-size: 5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: underline solid;
+  color: var(--light-text-color);
+}
+
+.breadcrumbs nav {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+
+.breadcrumbs nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.breadcrumbs nav ol a {
+  color: var(--dark-text-color-color);
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+}
+
+.breadcrumbs nav ol a.fw-bold.active {
+  color: var(--light-text-color);
+  font-weight: 600;
+}
+
+.breadcrumbs nav ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs nav ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: var(--light-text-color);
+  content: "/";
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+  .breadcrumbs .page-header h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline solid;
+    color: var(--light-text-color);
+  }
+  .breadcrumbs nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--dark-text-color);
+  }
+}
+
+/*-----------------------------------
+      Breadcrumbs
+      ------------------------------------*/
+/* Course */
+.course-card {
+  position: relative;
+  border: none;
+  background-color: var(--light-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 500px;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.course-card img {
+  border-bottom: 5px solid var(--secondary-color);
+  width: 100%;
+  height: 300px; /* Increased height of the image to fit within the card */
+  object-fit: cover;
+}
+
+.course-card .card-body {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.course-card h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-text-color);
+}
+
+.course-card .description {
+  font-size: 0.9rem;
+  color: #495057;
+  margin: 10px 0;
+}
+
+.price-circle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: var(--light-text-color);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    height: 350px;
+  }
+
+  .course-card img {
+    height: 200px;
+  }
+
+  .course-card .card-body {
+    padding: 10px;
+  }
+
+  .course-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .course-card .description {
+    font-size: 0.75rem;
+  }
+
+  .price-circle {
+    width: 55px;
+    height: 55px;
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Course */
+/*-----------------------------------
+   Footer
+  ------------------------------------*/
+#footer {
+  border-top: 4px solid var(--secondary-color);
+  padding: 12px 0;
+}
+
+.footer-heading {
+  color: var(--primary-color);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  color: var(--dark-text-color);
+  font-weight: 500;
+}
+
+.footer-text a {
+  color: var(--dark-text-color);
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: var(--secondary-color);
+}
+
+.horizon {
+  color: var(--primary-color);
+}
+
+.footer-logo {
+  width: 100px;
+  height: 80px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  color: inherit;
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.social-icon i {
+  margin-right: 8px;
+}
+
+.social-icon.facebook {
+  color: #3b5998;
+}
+
+.social-icon.twitter {
+  color: #1da1f2;
+}
+
+.social-icon.instagram {
+  color: #e4405f;
+}
+
+.social-icon.linkedin {
+  color: #0077b5;
+}
+
+.footer-name {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .social-media-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .footer-heading {
+    font-size: 1.2rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+/*-----------------------------------
+         Footer
+        ------------------------------------*/
