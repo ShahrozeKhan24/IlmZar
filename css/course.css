@@ -413,7 +413,7 @@ a.nav-link.fw-bold.active {
   }
 
   .course-card img {
-    height: 200px;
+    height: 150px;
   }
 
   .course-card .card-body {
@@ -432,6 +432,11 @@ a.nav-link.fw-bold.active {
     width: 55px;
     height: 55px;
     font-size: 0.8rem;
+  }
+
+  .card-body a.btn {
+  .btn {
+    padding: 8px 12px;
   }
 }
 
