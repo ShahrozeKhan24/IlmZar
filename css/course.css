@@ -69,7 +69,7 @@ span {
 }
 .btn:hover {
   background-color: var(--secondary-color-dark);
-  border-color: var(--light-color);
+  color: var(--light-color);
 }
 
 /* Buttons */
@@ -267,6 +267,7 @@ a.nav-link.fw-bold.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom: 10px solid var(--primary-color);
 }
 
 .breadcrumbs .page-header:before {
@@ -284,64 +285,12 @@ a.nav-link.fw-bold.active {
   color: var(--light-text-color);
 }
 
-.breadcrumbs nav {
-  background-color: var(--primary-color);
-  padding: 20px 0;
-}
-
-.breadcrumbs nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.breadcrumbs nav ol a {
-  color: var(--dark-text-color-color);
-  transition: 0.3s;
-  text-decoration: none;
-  font-family: "Roboto Condensed";
-}
-
-.breadcrumbs nav ol a.fw-bold.active {
-  color: var(--light-text-color);
-  font-weight: 600;
-}
-
-.breadcrumbs nav ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs nav ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: var(--light-text-color);
-  content: "/";
-}
-
-@media (min-width: 350px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .breadcrumbs .page-header h2 {
-    font-size: 2em;
+    font-size: 4rem;
     font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: underline solid;
-    color: var(--light-text-color);
-  }
-  .breadcrumbs nav ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.8em;
-    font-weight: 700;
-    color: var(--dark-text-color);
   }
 }
-
 /*-----------------------------------
       Breadcrumbs
       ------------------------------------*/
@@ -354,7 +303,9 @@ a.nav-link.fw-bold.active {
   overflow: hidden;
   box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .course-card:hover {
@@ -365,34 +316,34 @@ a.nav-link.fw-bold.active {
 .course-card img {
   border-bottom: 5px solid var(--secondary-color);
   width: 100%;
-  height: 300px; /* Increased height of the image to fit within the card */
+  height: 300px;
   object-fit: cover;
 }
 
-.course-card .card-body {
+.course-card-body {
   text-align: center;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  flex: 1;
 }
-
-.course-card h4 {
+.course-card-body .card-title {
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--dark-text-color);
 }
 
-.course-card .description {
-  font-size: 0.9rem;
-  color: #495057;
-  margin: 10px 0;
+.course-card-body .card-text {
+  font-size: 1rem;
+}
+
+.course-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--light-color);
 }
 
 .price-circle {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 20px;
   background: var(--primary-color);
   color: var(--light-text-color);
@@ -407,41 +358,15 @@ a.nav-link.fw-bold.active {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-  .course-card {
-    height: 350px;
-    padding: 0 10px 0;
-  }
-
-  .course-card img {
-    height: 150px;
-  }
-
-  .course-card .card-body {
-    padding: 10px;
-  }
-
-  .course-card h4 {
-    font-size: 1.2rem;
-  }
-
-  .course-card .description {
-    font-size: 0.75rem;
-  }
-
-  .price-circle {
-    width: 55px;
-    height: 55px;
-    font-size: 0.8rem;
-  }
-
-  .card-body a.btn {
-  .btn {
-    padding: 8px 12px;
-  }
+.course-card-body {
+  text-align: center;
+  padding: 20px;
+  flex: 1;
 }
-
-
+.course-card-footer {
+  display: flex;
+  justify-content: flex-end;
+}
 /* Course */
 /*-----------------------------------
    Footer
