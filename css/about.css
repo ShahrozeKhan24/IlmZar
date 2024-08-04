@@ -138,10 +138,7 @@ span {
 }
 .btn:hover {
   background-color: var(--secondary-color-dark);
-<<<<<<< HEAD
   color: var(--light-color);
-=======
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 }
 
 /* Buttons */
@@ -271,10 +268,7 @@ a.nav-link.fw-bold.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   border-bottom: 10px solid var(--primary-color);
-=======
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 }
 
 .breadcrumbs .page-header:before {
@@ -292,68 +286,10 @@ a.nav-link.fw-bold.active {
   color: var(--light-text-color);
 }
 
-<<<<<<< HEAD
 @media (max-width: 767px) {
   .breadcrumbs .page-header h2 {
     font-size: 4rem;
     font-weight: 700;
-=======
-.breadcrumbs nav {
-  background-color: var(--primary-color);
-  padding: 20px 0;
-}
-
-.breadcrumbs nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.breadcrumbs nav ol a {
-  color: var(--dark-text-color-color);
-  transition: 0.3s;
-  text-decoration: none;
-  font-family: "Roboto Condensed";
-}
-
-.breadcrumbs nav ol a.fw-bold.active {
-  color: var(--light-text-color);
-  font-weight: 600;
-}
-
-.breadcrumbs nav ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs nav ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: var(--light-text-color);
-  content: "/";
-}
-
-@media (min-width: 350px) and (max-width: 767px) {
-  .breadcrumbs .page-header h2 {
-    font-size: 2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: underline solid;
-    color: var(--light-text-color);
-  }
-  .breadcrumbs nav ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.8em;
-    font-weight: 700;
-    color: var(--dark-text-color);
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
   }
 }
 
@@ -361,21 +297,17 @@ a.nav-link.fw-bold.active {
     Breadcrumbs
     ------------------------------------*/
 
-<<<<<<< HEAD
 .about-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-=======
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 .about-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
   transition: transform 0.3s, box-shadow 0.3s;
   flex: 1 1 calc(33.333% - 1rem);
   min-height: 300px;
@@ -389,14 +321,6 @@ a.nav-link.fw-bold.active {
 }
 
 .about-card:hover {
-=======
-  height: 100%;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.about-card:hover,
-.why-choose-item:hover {
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -404,10 +328,7 @@ a.nav-link.fw-bold.active {
 .card-body {
   padding: 2em;
   text-align: center;
-<<<<<<< HEAD
   flex-grow: 1;
-=======
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 }
 
 .card-body h4 {
@@ -431,7 +352,6 @@ a.nav-link.fw-bold.active {
   font-size: 1rem;
   text-align: center;
 }
-<<<<<<< HEAD
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
@@ -491,8 +411,6 @@ a.nav-link.fw-bold.active {
   }
 }
 
-=======
->>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 /*-----------------------------------
    Footer
   ------------------------------------*/
