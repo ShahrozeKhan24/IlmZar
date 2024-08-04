@@ -68,7 +68,11 @@ span {
 }
 .btn:hover {
   background-color: var(--secondary-color-dark);
+<<<<<<< HEAD
+  color: var(--light-color);
+=======
   border-color: var(--light-color);
+>>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 }
 
 /* Buttons */
@@ -198,6 +202,10 @@ a.nav-link.fw-bold.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+<<<<<<< HEAD
+  border-bottom: 10px solid var(--primary-color);
+=======
+>>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 }
 
 .breadcrumbs .page-header:before {
@@ -215,6 +223,14 @@ a.nav-link.fw-bold.active {
   color: var(--light-text-color);
 }
 
+<<<<<<< HEAD
+@media (max-width: 767px) {
+  .breadcrumbs .page-header h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
+=======
 .breadcrumbs nav {
   background-color: var(--primary-color);
   padding: 20px 0;
@@ -273,6 +289,7 @@ a.nav-link.fw-bold.active {
   }
 }
 
+>>>>>>> 7821a14eace385cc084be47c737c00e3e184a3f6
 /*-----------------------------------
   Breadcrumbs
   ------------------------------------*/

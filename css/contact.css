@@ -58,7 +58,7 @@ span {
 }
 
 .btn {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--light-text-color);
   font-size: 1rem;
   padding: 10px 20px;
@@ -67,8 +67,8 @@ span {
   transition: all 0.5s linear;
 }
 .btn:hover {
-  background-color: var(--secondary-color-dark);
-  border-color: var(--light-color);
+  background-color: var(--primary-color-dark);
+  color: var(--light-color);
 }
 
 /* Buttons */
@@ -193,6 +193,7 @@ a.nav-link.fw-bold.active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom: 10px solid var(--primary-color);
 }
 
 .breadcrumbs .page-header:before {
@@ -210,143 +211,48 @@ a.nav-link.fw-bold.active {
   color: var(--light-text-color);
 }
 
-.breadcrumbs nav {
-  background-color: var(--primary-color);
-  padding: 20px 0;
-}
-
-.breadcrumbs nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.breadcrumbs nav ol a {
-  color: var(--dark-text-color-color);
-  transition: 0.3s;
-  text-decoration: none;
-  font-family: "Roboto Condensed";
-}
-
-.breadcrumbs nav ol a.fw-bold.active {
-  color: var(--light-text-color);
-  font-weight: 600;
-}
-
-.breadcrumbs nav ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs nav ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: var(--light-text-color);
-  content: "/";
-}
-
-@media (min-width: 350px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .breadcrumbs .page-header h2 {
-    font-size: 2em;
+    font-size: 4rem;
     font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: underline solid;
-    color: var(--light-text-color);
-  }
-  .breadcrumbs nav ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.8em;
-    font-weight: 700;
-    color: var(--dark-text-color);
   }
 }
 /* Breadcrumbs */
 
 /* Contact */
-.first_col {
-  background-color: var(--light-color);
-  height: 550px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  position: relative;
-  width: 550px;
-  left: 155px;
-  top: 171px;
-  border-radius: 20px;
+.form-control {
+  border-radius: 0.375rem;
 }
 
-.img-fluid {
-  border-radius: 20px;
+label.form-label {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .row-last {
-  width: 60% !important;
-  position: relative !important;
-  left: 350px;
-  top: 50px;
-  height: 170px;
-  padding-bottom: 100px !important;
-  background-color: var(--primary-color);
-  border-radius: 20px;
+  padding: 2rem;
+  border-radius: 0.4rem;
 }
 
-.row-last p {
+.row-last .col {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 0.375rem;
+}
+
+.row-last .fa-2x,
+.row-last .text {
   color: var(--light-text-color);
 }
 
-.form-control {
-  height: 52px;
-  background: var(--light-color);
-  font-size: 14px;
-  border-radius: 2px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: 1px solid var(--primary-color);
-}
-.form-control[type="text"]:focus {
-  border: 2px solid var(--dark-text-color);
-}
-
-.form-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--dark-text-color);
-}
-
-@media only screen and (max-width: 600px) {
-  .first_col {
-    position: initial;
-    left: 0 !important;
-  }
-
-  .sec_col {
-    order: 1 !important;
-  }
-
-  .row-last {
-    left: 0 !important;
-    width: 100% !important;
-    height: 400px !important;
-    top: 0 !important;
-  }
-
-  .row .col {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .row .col i {
-    margin-bottom: 10px;
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 }
+
 /* Contact */
 
 /* Footer */
