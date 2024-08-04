@@ -7,9 +7,8 @@ Acknowledgment:
 We would like to express our deepest gratitude to Sir Basit Hussain for his invaluable guidance and support in teaching us HTML and CSS. His expertise, dedication, and passion for web development have been instrumental in our learning journey. Sir Basit's teaching not only equipped us with essential technical skills but also inspired us to pursue excellence in our projects. We are truly grateful for his mentorship and the knowledge he has imparted to us.
 
 Group Members:
-- Group Leader: Shahroze Ayyaz Khan – Developed the Homepage and the Contact page.
-- Member: Sarmad Khan – Developed the About and Courses pages.
-- Member: Fahad Khan – Developed the Gallery and Signin/Signup pages.
+- Group Leader: Shahroze Ayyaz Khan – Developed the Homepage, Course and the Contact page.
+- Member: Fahad Khan – Developed the About, Gallery and Signin/Signup pages.
 
 Features:
 - Responsive Design: User-friendly and responsive website design, ensuring a seamless experience across all devices.
